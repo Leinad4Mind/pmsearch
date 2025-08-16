@@ -1,11 +1,12 @@
 <?php
 /**
 *
-* @package Anavaro.com PM Search
-* @copyright (c) 2013 Lucifer
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
+
 /**
 * @ignore
 */
@@ -14,7 +15,7 @@ namespace anavaro\pmsearch\acp;
 /**
 * @package acp
 */
-class acp_pmsearch_module
+class pmsearch_module
 {
 	private $search_helper;
 	var $state;

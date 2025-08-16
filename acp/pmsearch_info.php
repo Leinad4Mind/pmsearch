@@ -1,10 +1,9 @@
 <?php
 /**
 *
-* @package acp
-* @version $Id: acp_my_page.php,v 1.10 2006/12/31 16:56:14 acydburn Exp $
-* @copyright (c) 2006 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
@@ -13,13 +12,13 @@ namespace anavaro\pmsearch\acp;
 /**
 * @package module_install
 */
-class acp_pmsearch_info
+class pmsearch_info
 {
 	function module()
 	{
 		return array(
 			'filename'	=> 'anavaro\pmsearch\acp\acp_pmsearch_module',
-			'title'		=> 'ACP_PMSEARCH', // define in the lang/xx/acp/common.php language file
+			'title'		=> 'ACP_PMSEARCH_GRP',
 			'version'	=> '1.0.0',
 			'modes'		=> array(
 				'main'		=> array(

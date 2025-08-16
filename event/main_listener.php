@@ -2,8 +2,8 @@
 
 /**
 *
-* @package Anavaro.com PM Admin
-* @copyright (c) 2014 Lucifer
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -20,10 +20,10 @@ class main_listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.permissions'	       => 'acl_perms_add',
-			'core.submit_pm_after'	       => 'pm_search_main',
-			'core.delete_pm_before'	=> 'pm_delete_index',
-			'core.memberlist_view_profile'	       => 'pm_search_with_user',
+			'core.permissions'					=> 'acl_perms_add',
+			'core.submit_pm_after'				=> 'pm_search_main',
+			'core.delete_pm_before'				=> 'pm_delete_index',
+			'core.memberlist_view_profile'	=> 'pm_search_with_user',
 		);
 	}
 

@@ -1,10 +1,10 @@
 <?php
 /**
 *
-* PM Search extension for the phpBB Forum Software package.
-* Brazilian Portuguese translation by eunaumtenhoid (c) 2017 [ver 1.0.0] (https://github.com/phpBBTraducoes)
-*
-* @license GNU General Public License, version 2 (GPL-2.0)
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* Brazilian Portuguese translation by eunaumtenhoid (c) 2017 [ver 1.0.0] 
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 

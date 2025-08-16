@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package migration
-* @copyright (c) 2014 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License v2
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 

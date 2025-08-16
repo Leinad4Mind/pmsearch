@@ -2,8 +2,9 @@
 
 /**
 *
-* @package Anavaro.com PM Search
-* @copyright (c) 2014 Lucifer
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* Swedish translation by Holger (http://www.maskinisten.net)
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */

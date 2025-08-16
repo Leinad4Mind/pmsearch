@@ -1,10 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: lucifer
- * Date: 13.2.2017 г.
- * Time: 17:18
- */
+*
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* Swedish translation by Holger (http://www.maskinisten.net)
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
 
 namespace anavaro\pmsearch;
 

@@ -1,11 +1,10 @@
 <?php
 /**
 *
-* PM Search extension for the phpBB Forum Software package.
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
 * Swedish translation by Holger (http://www.maskinisten.net)
-*
-*
-* @license GNU General Public License, version 2 (GPL-2.0)
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
