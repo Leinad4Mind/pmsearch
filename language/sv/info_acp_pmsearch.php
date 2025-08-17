@@ -39,8 +39,10 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	// ACP general language
-	'ACP_PMSEARCH_GRP'	=> 'Sök inom PM',
-	'ACP_PRVOPT'	=> 'Inställningar',
+	'ACP_PMSEARCH'               => 'PM Search',
+	'ACP_PMSEARCH_TITLE'         => 'Inställningar',
+	'ACP_PMSEARCH_GOODBYE'       => 'Should say goodbye?',
+	'ACP_PMSEARCH_SETTING_SAVED' => 'Settings have been saved successfully!',
 
 	//ACP PM Admin Settings page
 	'PMSEARCH_ADMIN'	=> 'Sök inom PM',

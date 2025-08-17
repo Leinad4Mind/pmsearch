@@ -14,19 +14,18 @@ namespace anavaro\pmsearch\acp;
 */
 class pmsearch_info
 {
-	function module()
+	public function module()
 	{
-		return array(
-			'filename'	=> 'anavaro\pmsearch\acp\acp_pmsearch_module',
-			'title'		=> 'ACP_PMSEARCH_GRP',
-			'version'	=> '1.0.0',
-			'modes'		=> array(
-				'main'		=> array(
-					'title'		=> 'ACP_PRVOPT',
-					'auth' 		=> 'ext_anavaro/pmsearch && acl_a_user',
-					'cat'		=> array('ACP_PMSEARCH_GRP')
-				),
-			),
-		);
+		return [
+			'filename'	=> '\anavaro\pmsearch\acp\pmsearch_module',
+			'title'		=> 'ACP_PMSEARCH',
+			'modes'		=> [
+				'index'		=> [
+					'title'		=> 'ACP_PMSEARCH',
+					'auth' 		=> 'ext_anavaro/pmsearch && acl_a_user && acl_a_board',
+					'cat'		=> ['ACP_CAT_DATABASE'],
+				],
+			],
+		];
 	}
 }

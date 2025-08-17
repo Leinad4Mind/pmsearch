@@ -20,9 +20,9 @@ class main_listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.permissions'					=> 'acl_perms_add',
-			'core.submit_pm_after'				=> 'pm_search_main',
-			'core.delete_pm_before'				=> 'pm_delete_index',
+			'core.permissions'				=> 'acl_perms_add',
+			'core.submit_pm_after'			=> 'pm_search_main',
+			'core.delete_pm_before'			=> 'pm_delete_index',
 			'core.memberlist_view_profile'	=> 'pm_search_with_user',
 		);
 	}
@@ -45,9 +45,12 @@ class main_listener implements EventSubscriberInterface
 	 * @param \phpbb\template|\phpbb\template\template           $template  Template object
 	 * @internal param \phpbb\content_visibility $content_visibility Content visibility object
 	 */
-	public function __construct(\phpbb\config\config $config, \phpbb\db\driver\driver_interface $db,
+	public function __construct(
+		\phpbb\config\config $config,
+		\phpbb\db\driver\driver_interface $db,
 		\phpbb\template\template $template,
-		\anavaro\pmsearch\helper $search_helper)
+		\anavaro\pmsearch\helper $search_helper,
+	)
 	{
 		$this->config = $config;
 		$this->db = $db;
@@ -56,6 +59,7 @@ class main_listener implements EventSubscriberInterface
 
 		$error = false;
 		$search_types = $this->search_helper->get_search_types();
+
 		if ($this->search_helper->init_search($search_types[0], $this->fulltext_search, $error))
 		{
 			trigger_error($error, E_USER_WARNING);

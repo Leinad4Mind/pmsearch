@@ -10,12 +10,19 @@
 
 namespace anavaro\pmsearch;
 
-
 class helper
 {
-	public function __construct(\phpbb\extension\manager $ext_manager, \phpbb\auth\auth $auth, \phpbb\config\config $config,
-		\phpbb\db\driver\driver_interface $db, \phpbb\user $user, \phpbb\language\language $language, \phpbb\event\dispatcher $dispatcher,
-		$phpbb_root_path, $phpEx)
+	public function __construct(
+		\phpbb\extension\manager $ext_manager,
+		\phpbb\auth\auth $auth,
+		\phpbb\config\config $config,
+		\phpbb\db\driver\driver_interface $db,
+		\phpbb\user $user,
+		\phpbb\language\language $language,
+		\phpbb\event\dispatcher $dispatcher,
+		$phpbb_root_path,
+		$phpEx,
+	)
 	{
 		$this->ext_manager = $ext_manager;
 		$this->auth = $auth;

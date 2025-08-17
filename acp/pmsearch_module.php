@@ -23,6 +23,7 @@ class pmsearch_module
 	var $max_post_id;
 	var $batch_size = 200;
 	var $u_action;
+
 	function main($id, $mode)
 	{
 		global $config, $user, $table_prefix, $db, $template, $request, $phpbb_root_path, $phpbb_log, $phpbb_admin_path, $phpEx;
@@ -240,6 +241,7 @@ class pmsearch_module
 			break;
 		}
 	}
+
 	function get_search_types()
 	{
 		global $phpbb_root_path, $phpEx, $phpbb_extension_manager;
@@ -252,6 +254,7 @@ class pmsearch_module
 			->core_path('ext/anavaro/pmsearch/search/')
 			->get_classes();
 	}
+
 	function save_state($state = false)
 	{
 		global $config;
@@ -277,11 +280,12 @@ class pmsearch_module
 
 		return $max_post_id;
 	}
+
 	/**
-	* Initialises a search backend object
-	*
-	* @return false if no error occurred else an error message
-	*/
+	 * Initialises a search backend object
+	 *
+	 * @return false if no error occurred else an error message
+	 */
 	function init_search($type, &$search, &$error)
 	{
 		global $phpbb_root_path, $phpEx, $user, $auth, $config, $db, $table_prefix;

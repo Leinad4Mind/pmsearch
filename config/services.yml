@@ -21,7 +21,7 @@ services:
             - '%core.root_path%'
             - '%core.php_ext%'
     anavaro.pmsearch.fulltext_native:
-        class: anavaro\pmsearch\search\pm_search_fulltext_native
+        class: anavaro\pmsearch\search\pmsearch_fulltext_native
         arguments:
             - '@auth'
             - '@config'

@@ -1,13 +1,14 @@
 <?php
 /**
- *
- * phpBB PM Search events test
- *
- * @copyright (c) 2015 Lucifer <https://www.anavaro.com>
- * @license GNU General Public License, version 2 (GPL-2.0)
- *
- */
+*
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
+
 namespace anavaro\pmsearch\tests\search;
+
 /**
  * @group event
  */

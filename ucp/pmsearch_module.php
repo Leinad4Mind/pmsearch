@@ -13,7 +13,7 @@
 */
 namespace anavaro\pmsearch\ucp;
 
-class ucp_pmsearch_module
+class pmsearch_module
 {
 	var $u_action;
 	private $search_helper;
@@ -23,15 +23,18 @@ class ucp_pmsearch_module
 		'any'	=> 2,
 		'nick'	=> 3,
 	);
+
 	function main($id, $mode)
 	{
 		global $db, $user, $auth, $template, $request, $phpbb_container, $config;
 		$this->config = $config;
 		$this->search_helper = $phpbb_container->get('anavaro.pmsearch.search.helper');
+
 		if (!$auth->acl_get('u_pmsearch'))
 		{
 			trigger_error('ACCESS_DENIED');
 		}
+
 		switch ($mode)
 		{
 			case 'search':
@@ -100,10 +103,10 @@ class ucp_pmsearch_module
 						//$this->var_display($sql);
 						$result = $db->sql_query($sql);
 						// Let's populate template
-						$author_uid_arrray = array();
+						$author_uid_array = array();
 						while ($row = $db->sql_fetchrow($result))
 						{
-							$author_uid_arrray[] = (int) $row['msg_author'];
+							$author_uid_array[] = (int) $row['msg_author'];
 							$page_array[$row['msg_id']] = array(
 								'msg_id'	=> $row['msg_id'],
 								'msg_subject'	=>	$row['msg_subject'],
@@ -115,12 +118,12 @@ class ucp_pmsearch_module
 						}
 						if (is_numeric($keywords))
 						{
-							$author_uid_arrray[] = (int) $keywords;
+							$author_uid_array[] = (int) $keywords;
 						}
 						$db->sql_freeresult($result);
 						// ... one for the authors on this page
 						$authors_array = array();
-						$sql = 'SELECT user_id, username, user_colour FROM ' . USERS_TABLE . ' WHERE ' .  $db->sql_in_set('user_id', $author_uid_arrray);
+						$sql = 'SELECT user_id, username, user_colour FROM ' . USERS_TABLE . ' WHERE ' .  $db->sql_in_set('user_id', $author_uid_array);
 						$result = $db->sql_query($sql);
 						while ($row = $db->sql_fetchrow($result))
 						{
@@ -172,9 +175,12 @@ class ucp_pmsearch_module
 					}
 					// After we got the the search count we go deeper
 				}
+
 				$template->assign_vars(array(
-					'SEARCH_TEARM_TYPE' => $this->terms_ary[$terms]
+					'SEARCH_TERM_TYPE' => $this->terms_ary[$terms]
 				));
+
+			break;
 		}
 	}
 }

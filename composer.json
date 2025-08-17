@@ -1,11 +1,11 @@
 {
 	"name": "anavaro/pmsearch",
 	"type": "phpbb-extension",
-	"description": "Adds feature to search through private messages in phpBB via the UCP.",
+	"description": "Adds functionality to search through private messages in phpBB via the UCP.",
 	"homepage": "https://www.phpbb.com/community/viewtopic.php?f=456&t=2263011",
 	"version": "3.0.0",
-	"time": "2025-01-06",
-	"license": "GPL-2.0",
+	"time": "2025-08-17",
+	"license": "GPL-2.0-only",
 	"authors": [
 		{
 			"name": "Leinad4Mind",
@@ -14,7 +14,6 @@
 		},
 		{
 			"name": "Stanislav Atanasov",
-			"email": "lucifer@anavaro.com",
 			"homepage": "https://anavaro.com",
 			"role": "Original Developer"
 		}
@@ -27,7 +26,7 @@
 		"phpbb/epv": "dev-master"
 	},
 	"extra": {
-		"display-name": "PM Search",
+		"display-name": "Advanced PM Search",
 		"version-check": {
 			"host": "lab.anavaro.com",
 			"directory": "/phpbb-ext",

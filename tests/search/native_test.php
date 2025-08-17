@@ -1,15 +1,11 @@
 <?php
 /**
- * native_test.php
- * part of pmsearch
- * Created by Stanislav Atanasov.
- * Date: 8/5/19
- * Time: 3:51 PM
- *
- * File description:
- *
- *
- */
+*
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
 
 namespace anavaro\pmsearch\tests\search;
 
@@ -51,7 +47,7 @@ class native_test extends \phpbb_search_test_case
 		$this->db = $this->new_dbal();
 		$phpbb_dispatcher = new \phpbb_mock_event_dispatcher();
 		$error = null;
-		$class = self::get_search_wrapper('\anavaro\pmsearch\search\pm_search_fulltext_native');
+		$class = self::get_search_wrapper('\anavaro\pmsearch\search\pmsearch_fulltext_native');
 		if (PHP_VERSION_ID > 70399)
 		{
 			$errorlevel=error_reporting();

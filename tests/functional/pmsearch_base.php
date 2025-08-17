@@ -1,10 +1,9 @@
 <?php
 /**
 *
-* PM Search
-*
-* @copyright (c) 2014 Stanislav Atanasov
-* @license GNU General Public License, version 2 (GPL-2.0)
+* @package PM Search
+* @copyright (c) 2013 Lucifer | 2025 Leinad4Mind
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
